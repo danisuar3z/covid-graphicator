@@ -91,6 +91,8 @@ def plot_inter(countries, min_date=None, max_date=None):
     country1 = df[(country1_mask) & (date_mask)]
     country2 = df[(country2_mask) & (date_mask)]
 
+    # We use an inner merge here so the x axis has the same 
+    # values for both countries, avoiding potential problems
     df2 = pd.merge(country1, country2, how="inner", on="date")
 
     intersections = find_inter(df2)
@@ -134,7 +136,7 @@ def plot_inter(countries, min_date=None, max_date=None):
                     pd.Timestamp.fromtimestamp(inter[0])+pd.Timedelta(hours=3),
                     inter[1], linewidths=0.8,
                     s=80, zorder=3, facecolors="none", edgecolors="black")
-            except ValueError:
+            except ValueError:  # Intersections array may have some NaNs
                 pass
 
     plt.legend()
