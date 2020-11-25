@@ -19,9 +19,6 @@ def enter():
 def main():
 
     global df
-    global DATA_FILEPATH
-
-    # df = load_data(DATA_FILEPATH)
 
     while True:
 
