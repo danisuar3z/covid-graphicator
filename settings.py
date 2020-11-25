@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Put the path to the data file here
-DATA_FILEPATH = "../data/data.csv"
+DATA_FILEPATH = "data.csv"
 
 # Width and characters for the program display
 a = 49
