@@ -10,5 +10,5 @@ COVID-19 cases and deaths graphicator with matplotlib
 You need the python libraries NumPy, matplotlib and pandas.  
 
 <br/>
-Example animation  
+Example animation  <br/>
 ![](example.gif)
