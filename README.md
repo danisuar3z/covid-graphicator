@@ -5,7 +5,7 @@ I developed it with a friend of mine, Lucas Cañas.
 <br><br/>
 ## How to run it  
 You can run it in your terminal by calling `python covid_graphicator.py` while you are in the same directory.  
-I've added a data.csv file but you can update it in the future from this source https://covid.ourworldindata.org/data/ecdc/full_data.csv  
+I've added a data.csv file but you can update it in the future from this source https://covid.ourworldindata.org/data/owid-covid-data.csv  
 Example for Windows PowerShell:  
 `wget https://covid.ourworldindata.org/data/ecdc/full_data.csv -OutFile new_data.csv`  
 and then changing the filepath in settings.py  
